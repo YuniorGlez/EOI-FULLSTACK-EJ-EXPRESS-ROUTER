@@ -47,7 +47,7 @@ function create(req, res) {
 
 // Auxiliars 
 function cargarUsuarios() {
-    const fileData = fs.readFileSync(__dirname + '/users.json');
+    const fileData = fs.readFileSync(__dirname + '/../../data/users.json');
     return JSON.parse(fileData);
 }
 

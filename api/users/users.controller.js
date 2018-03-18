@@ -37,14 +37,8 @@ function create(req, res) {
             .status(400)
             .send('Cuerpo de la solicitud vacío o inválido');
     }
-    const {
-        name,
-        email
-    } = req.body;
-    const user = {
-        name,
-        email
-    }
+    const { name, email } = req.body;
+    const user = { name, email }
     user.id = generateId();
     users.push(user);
     return res.json(user);

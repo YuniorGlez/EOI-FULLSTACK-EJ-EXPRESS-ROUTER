@@ -17,6 +17,7 @@ function getAll(req, res) {
 
 function getById(req, res) {
     const id = +req.params.id;
+    a * 5;
     if (!id)
         return res
             .status(400)
@@ -43,7 +44,6 @@ function create(req, res) {
     users.push(user);
     return res.json(user);
 }
-
 
 // Auxiliars 
 function cargarUsuarios() {

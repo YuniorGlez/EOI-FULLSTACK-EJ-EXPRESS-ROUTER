@@ -7,9 +7,19 @@ const users = cargarUsuarios();
  * GET     /api/users/:id          ->  getById
  **/
 
-module.exports.getAll = getAll;
-module.exports.getById = getById;
-module.exports.create = create;
+
+// Todo del tiron con un objeto
+// module.exports = { getAll : getAll, getById : getById, create : create }
+
+// Todo del tiron con un objeto y truquito papá
+// module.exports = { getAll, getById, create }
+
+// Linea a linea 
+module.exports.getAll = getAll
+module.exports.getById = getById
+module.exports.create = create
+
+
 
 function getAll(req, res) {
     return res.json(users)
